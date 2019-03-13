@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding-top: 0;
+ background-image: url("pictures/MainFone.png");
+background-position: center center;      
+/* Фон не повторяется */   background-repeat: no-repeat;      
+/* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */   background-attachment: fixed;      
+/* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/   background-size: cover;    
+}
+head
+{
+  padding-top: 0;
+}
+header {
+     background: #060e14;
+    height: 200%;
+      padding-top: 0.1%;
+  padding-bottom: 0.1%;
+}
+h1 {
+	font-stretch: ultra-expanded;
+    color: #e1e8f2;
+    font-weight: 100;
+  font-size: 250%;
+  font-family: Georgia, serif;
+  text-align: center;
+}
+section
+{
+	height: 50vi;
+	margin: 100px;
+	padding: 50px;
+   background: rgba(7, 13, 22, 0.5);
+}
+.info
+{
+
+	 font-size: 3vw;
+  font-family: Georgia, serif;
+  color: #e1e832;
+}
+.info.top
+{
+
+text-align: center;
+ padding:10px;
+color: #e1e8f2;
+}
+ li {
+ text-align: right;margin-right: 35px;  border-bottom: 2px solid #0f4caa; padding-top: 15px;
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: 1px solid #000; /* Рамка вокруг текста */
+
+   }

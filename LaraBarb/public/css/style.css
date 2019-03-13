@@ -1,0 +1,68 @@
+h1 {
+  color: #e1e8f2;
+  font-family: Georgia, serif;
+}
+section{
+  position: relative;
+	height: 50vi;
+	margin: 2%;
+	padding: 4vw;
+  background: rgba(7, 13, 22, 0.5);
+}
+.box{
+  width:600px;
+  margin:0 auto;
+  border:1px solid #ccc;
+}
+.info{
+  color: #e1e8f2;
+  font-size: 1.5vw;
+  text-align: center;
+  font-family: Georgia, serif;
+  margin-top: 0.5vw;
+  margin-bottom: 4vw;
+}
+.mainfone {
+  margin: 0;
+  padding-top: 0;
+  background-image: url("pictures/MainFone.png");
+  background-position: center center;      
+  background-repeat: no-repeat;      
+  background-attachment: fixed;      
+  background-size: cover;    
+}
+.top{
+  font-size: 2vw;
+  color: inherit;
+  text-align: inherit;
+  font-family: inherit;
+  margin-top:inherit;
+  margin-bottom:inherit;
+}
+li {
+  text-align: right;margin-right: 35px;
+  border-bottom: 2px solid #0f4caa;
+  padding-top: 15px;
+  display: inline;
+  margin-right: 5px;
+  border: 1px solid #000;
+}
+.wrapp ul{
+  width: 100%;
+}
+.wrapp ul li{ 
+  display: inline-block;
+  font-size: 1.5vw;
+  color: #e1e8f2;
+  border: none; 
+  list-style:none;
+}
+.imagesBox{
+  text-align:center;
+}
+.imagesBox img{
+  width:300px;
+  height:300px;
+  border-radius: 50%;
+  margin:25px; 
+}
