@@ -39,14 +39,6 @@ section{
   margin-top:inherit;
   margin-bottom:inherit;
 }
-li {
-  text-align: right;margin-right: 35px;
-  border-bottom: 2px solid #0f4caa;
-  padding-top: 15px;
-  display: inline;
-  margin-right: 5px;
-  border: 1px solid #000;
-}
 .wrapp ul{
   width: 100%;
 }
