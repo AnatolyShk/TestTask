@@ -15,7 +15,7 @@
             </div>
             <div>
                 <label>Выберите фотографию для услуги</label>
-                <input class="btn btn-secondary btn-sm col-lg-12 col-md-8 col-sm-6 m-3" type="file" name="image">
+                <input class="btn btn-secondary btn-sm col-lg-12 col-md-8 col-sm-6 m-3" type="file" name="image"  required>
             </div>
             <div class="form-group">
                 <button type="sumbit" class="btn btn-success"><i class="fa fa-plus"></i> Добавить усллугу</button>
@@ -44,10 +44,10 @@
                         <button type = "sumbit"  class="btn btn-outline-primary" >Убрать из топа</button>
                 </form>
                     </td>
+                    <td>
                 <form action="{{url('service/'.$serv->id)}}" method="POST">
                     {{csrf_field()}}
                     {{method_field('DELETE')}}
-                    <td>
                         <button type = "sumbit" class="btn btn-outline-danger" onclick="return confirm('Are you sure you want to delete service?')">Удалить</button>
                     </td>
                 </form>
@@ -73,19 +73,19 @@
                  <td class="table-text">
                     <div>{{ $serv->cost }}</div>
                 </td>
-                 <form class ="delete" action="{{url('uprank/'.$serv->id)}}" method="POST">
+                <td>
+                 <form action="{{url('uprank/'.$serv->id)}}" method="POST">
                     {{csrf_field()}}
-                    <td>
                         <button type = "sumbit"  class="btn btn-outline-primary" >В топ</button>
-                    </td>
                 </form>
+                </td>
+                <td>
                 <form action="{{url('service/'.$serv->id)}}" method="POST">
                     {{csrf_field()}}
                     {{method_field('DELETE')}}
-                    <td>
                         <button type = "sumbit" class="btn btn-outline-danger" onclick="return confirm('Are you sure you want to delete service?')">Удалить</button>
-                    </td>
                 </form>
+                </td>
             </tr>
             @endif
             @endforeach    
@@ -132,13 +132,13 @@
                     <td class="table-text">
                         <div>{{ $place->address }}</div>
                     </td>
+                    <td>
                     <form action="{{url('place/'.$place->id)}}" method="POST">
                         {{csrf_field()}}
                         {{method_field('DELETE')}}
-                        <td>
                             <button type = "sumbit" class="btn btn-outline-danger" onclick="return confirm('Are you sure you want to delete service?')">Удалить</button>
-                        </td>
                     </form>
+                    </td>
                 </tr>
                 @endforeach    
                 </tbody>
