@@ -13,7 +13,7 @@ class PlaceController extends Controller
   		$validator = Validator::make($request->all(), [
     	'city' => 'required|max:255',
     	'address' => 'required|max:255',
-    	'phone' => 'required|min:12',
+    	'phone' => 'required|min:12|numeric',
   		]);
 
   		if ($validator->fails()) {
